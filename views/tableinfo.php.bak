@@ -1,0 +1,61 @@
+<?php
+if ( isset($error) )
+    var_dump($error);
+?>
+
+<h3>total pages is <?php echo $pages; ?></h3>
+<p class="right">
+<p><?php echo $number; ?></p>
+<p><?php echo $prev; ?></p>
+<p><?php echo $next; ?></p>
+<p><?php echo $pages; ?></p>
+
+<!--    first page -->
+    <?php if( $number <= 1 ) {
+
+        echo "<span>&laquo; prev</span> | <a href=\"?page=$next\">next &raquo;</a>";
+
+    } elseif ($number >= $pages) {
+
+        echo "<span>&laquo; prev</span> | <a href=\"?page=$next\">next &raquo;</a>";
+
+    } else {
+
+        echo "<a href=\"?page=$prev\">&laquo; prev</a> | <a href=\"?page=$next\">next &raquo;</a>";
+    }
+    ?>
+
+</p>
+<table class="table table-bordered table-hover table-striped">
+  <thead>
+    <tr>
+        <?php foreach ( $description as $row ) { ?>
+
+            <th><?php echo $row['Field']; ?></th>
+
+        <?php } ?>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach ($result as $d) { ?>
+      <tr class="tableInfo">
+        <?php foreach ($description as $td) { ?>
+
+          <td><?php echo substr($d[$td["Field"]], 0, 30); ?></td>
+
+        <?php } ?>
+
+        </tr>
+    <?php } ?>
+  </tbody>
+    <tfoot>
+    <tr>
+        <?php foreach ( $description as $row ) { ?>
+
+            <th><?php echo $row['Field']; ?></th>
+
+        <?php } ?>
+    </tr>
+    </tfoot>
+</table>
+

@@ -1,0 +1,18 @@
+
+#login-form {
+	margin-top: 100px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	background: #2DA8A8;
+}
+
+#login-form legend {
+	background: #E68FD2;
+	text-align: center;
+}
+
+/*#page .dbTables {*/
+	/*visibility: hidden;*/
+	/*display: none;*/
+/*}*/

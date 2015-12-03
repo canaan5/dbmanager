@@ -1,0 +1,21 @@
+{
+    "name": "vng/replicator",
+    "description": "Replication Package for Verifiynigeria project",
+    "type": "PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TeamVNG",
+            "email": "team@verifyng.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "core/",
+            "controller/",
+            "views/"
+        ]
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
