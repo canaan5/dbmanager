@@ -34,9 +34,9 @@ class Route
 
 					if ( isset($useMethod[0]) && isset($useMethod[1]))
 					{
-						$cls = new $useMethod[0]();
-
-						return $cls->$useMethod[1]();
+						list($cls, $method) = $useMethod;
+						$cls = new $cls;
+						return $cls->$method();
 
 					} else {
 						

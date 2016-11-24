@@ -1,12 +1,12 @@
 {
-    "name": "vng/replicator",
-    "description": "Replication Package for Verifiynigeria project",
+    "name": "dbmanager",
+    "description": "Database management system",
     "type": "PHP",
     "license": "MIT",
     "authors": [
         {
-            "name": "TeamVNG",
-            "email": "team@verifyng.com"
+            "name": "Canaan Etaigbenu",
+            "email": "kestylove5@gmail.com"
         }
     ],
     "autoload": {
