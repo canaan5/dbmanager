@@ -1,3 +1,7 @@
+body {
+	background: #ddd;
+	font-family: 'Muli', sans-serif;
+}
 
 #login-form {
 	margin-top: 100px;

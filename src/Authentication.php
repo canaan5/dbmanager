@@ -1,13 +1,16 @@
 <?php
-
 /**
  * This file is part of Proteux technologies Ltd (ChambersLegal)
  *
- * Session
+ * Authentication
  * @package
- * Date: 11/24/16
+ * Date: 11/25/16
  */
-class Session
+
+namespace CANAAN;
+
+
+class Authentication
 {
     
 }
